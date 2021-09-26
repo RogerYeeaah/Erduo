@@ -1,14 +1,18 @@
-.header
+.header.relative
     .container.flex.f-V-B
         .logo
-            .img(style="background-image: url('images/logo-white.png')")
+            .img(style="background-image: url('images/logo-white.svg')")
 
-        ul.menu
+        ul.menu.flex.f-R
             li
-                a(href="#index") 首頁
+                a.t-C.inline-block.relative(href="#index") 首頁
+                    span.inline-block.absolute Home
             li
-                a(href="#services") 服務
+                a.t-C.inline-block.relative(href="#service") 服務
+                    span.inline-block.absolute Service
             li
-                a(href="#works") 作品
+                a.t-C.inline-block.relative(href="#works") 作品
+                    span.inline-block.absolute Works
             li
-                a(href="#contact") 聯絡我們
+                a.t-C.inline-block.relative(href="#contact") 聯絡我們
+                    span.inline-block.absolute Contact

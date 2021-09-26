@@ -2,6 +2,15 @@
 
 @import mixins/_rwd
 @import mixins/_font
+@import mixins/_universal
 
 body
     background: #f2efed
+
+.container
+    margin: 0 auto
+    width: 1280px
+    max-width: 100%
+
+    +breakpoint(zone-nb)
+        max-width: calc(100% - 40px)
