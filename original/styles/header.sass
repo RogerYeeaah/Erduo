@@ -7,7 +7,31 @@
     padding: 15px 0
     width: 100%
     top: 40px
-    z-index: 1
+    z-index: 999
+    transition: .5s ease
+
+    &:after
+        content: ''
+        position: absolute
+        top: -50px
+        left: 0
+        height: 100%
+        width: 100%
+        background-image: linear-gradient(180deg, #181513, transparent)
+        transition: .5s ease
+        z-index: -1
+        opacity: 0
+
+    &.fix
+        top: 0px
+
+        &:after
+            top: 0px
+            opacity: 1
+
+        *   
+            transition: .5s ease
+            font-size: 100% !important
 
     .container
         +breakpoint(zone-nb)

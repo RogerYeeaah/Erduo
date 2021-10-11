@@ -1,0 +1,25 @@
+@charset "utf-8"
+
+@import mixins/_rwd
+@import mixins/_font
+
+.footer
+    padding: 15px 0
+    width: 100%
+    top: 40px
+    z-index: 999
+    transition: .5s ease
+
+    .container
+        +breakpoint(zone-nb)
+            max-width: calc(100% - 80px)
+
+    .logo
+        width: 11.09%
+
+        .img
+            width: 100%
+            padding-bottom: 35.2%
+            background-size: cover
+            background-repeat: no-repeat
+            background-position: center

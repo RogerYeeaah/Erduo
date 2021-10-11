@@ -7,6 +7,7 @@
 body
     background: #f2efed
 
+
 .container
     margin: 0 auto
     width: 1280px
@@ -20,11 +21,40 @@ body
         max-width:calc(100%)
 
 
+[class*="btn"]
+    padding: 18px 25px 18px 30px
+    position: absolute
+    display: flex
+    align-items: center
+    right: 20px
+    bottom: 0
+    background: white
+    z-index: 3
+
+    +small
+    +default-color
+
+    .img
+        margin-right: 5px
+        display: inline-block
+        width: 32px
+        height: 32px
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+
+    span
+        display: inline-block
+
+
 // banner
 .banner
+    position: relative
+
     .banner-img
         width: 100%
-        padding-bottom: 50.89%
+        padding-bottom: 50.8%
+        position: relative
         background-size: cover
         background-repeat: no-repeat
         background-position: center
@@ -32,3 +62,124 @@ body
         &:after
             content: ''
             position: absolute
+            top: 0
+            right: 0
+            height: 100%
+            width: 70%
+            background-image: url(../images/wave-01.png)
+            background-size: contain
+            background-repeat: no-repeat
+            background-position: right bottom
+            z-index: 1
+
+        &:before
+            content: ''
+            position: absolute
+            bottom: -40px
+            left: calc((100vw - 1280px - 80px)*0.5)
+            height: 100%
+            width: 60%
+            background-image: url(../images/banner-text-01.png)
+            background-size: contain
+            background-repeat: no-repeat
+            background-position: left bottom
+            z-index: 2
+
+            +breakpoint(zone-nb)
+                left: calc((100vw - 100% - 40px)*0.5)
+
+    .btn-scroll-down
+        bottom: 40px
+
+
+// service
+.service
+    margin-top: -40px
+    position: relative
+    z-index: 2
+
+    .decoration-layer
+        margin-left: 80px
+        width: calc(100% - 80px)
+
+    .service-card
+        margin-left: 95px
+        position: relative
+        background: white
+        border-radius: 0 0 0 30px
+        box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.05)
+
+        +breakpoint(zone-nb)
+            margin: 0
+
+        &:after
+            content: ''
+            position: absolute
+            height: calc(100% - 100px)
+            bottom: 0
+            left: -100px
+            width: 1px
+            background: rgba(black, 0.2)
+
+            +breakpoint(zone-nb)
+                left: -60px
+
+    .title-box
+        padding: 25px 40px
+        display: inline-block
+        background: $darkGold
+
+        span
+            +headline2($font-size: 36px)
+            +default-white-color
+
+            small
+                position: relative
+                bottom: -2px
+
+                +title2
+                +secondary-white-color
+
+                &:before
+                    content: '╱'
+                    padding: 0 10px
+                    position: relative
+                    bottom: 2px
+                    font-size: 20px
+
+    .content-box
+        padding: 40px 50px
+        display: inline-flex
+        flex-wrap: wrap
+
+        .card
+            margin-right: 50px
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+            width: calc(33.333% - (50px*2/3))
+            border-bottom: 1px solid rgba(black, 0.2)
+
+            &:nth-child(3n)
+                margin-right: 0
+
+            div
+                width: 100%
+
+            .img
+                width: 90px
+                height: 90px
+                background-repeat: no-repeat
+                background-size: cover
+                background-position: center
+
+            .title
+                +subHeader2
+                +default-color
+
+            .content
+                padding: 0 10px
+
+                +body
+                +default-color

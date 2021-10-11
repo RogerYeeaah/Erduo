@@ -2,6 +2,15 @@
 <script src="script/jquery/jquery-3.6.0.js"></script>
 <script>
   $(document).ready(function () {
-      
+  
+      $(window).scroll(function() {
+          var ww = $(window).scrollTop();
+  
+          if (ww > 100) {
+              $('.header').addClass('fix');
+          } else {
+              $('.header').removeClass('fix');
+          }
+      });
   });
 </script>
