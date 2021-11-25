@@ -1,0 +1,9 @@
+.vscode/
+includes/
+node_modules/
+
+banner.html
+gulpfile.js
+idnex.pug
+pakage-lock.json
+pakage.json
