@@ -139,6 +139,7 @@
 }
 .header .logo {
   width: 11.09%;
+  min-width: 80px;
 }
 .header .logo .img {
   width: 100%;
@@ -147,8 +148,18 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+@media only screen and (max-width: 800px) {
+  .header .menu {
+    display: none;
+  }
+}
 .header .menu li {
   margin-right: 92px;
+}
+@media only screen and (max-width: 800px) {
+  .header .menu li {
+    margin-right: 25px;
+  }
 }
 .header .menu li:last-child {
   margin-right: 0;
@@ -161,6 +172,16 @@
   letter-spacing: 1.36px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.8);
+}
+@media only screen and (max-width: 800px) {
+  .header .menu li a {
+    font-size: 13.8px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .header .menu li a {
+    font-size: 16px;
+  }
 }
 .header .menu li a span {
   top: 24px;
@@ -180,7 +201,94 @@
   line-height: 28px;
   color: rgba(255, 255, 255, 0.3);
 }
+@media only screen and (max-width: 800px) {
+  .header .menu li a span {
+    font-size: 13.8px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .header .menu li a span {
+    display: none;
+  }
+}
 .header .menu li a:hover span {
   top: 20px;
   opacity: 0;
+}
+.header .burger {
+  display: none;
+  position: relative;
+  cursor: pointer;
+}
+@media only screen and (max-width: 800px) {
+  .header .burger {
+    display: block;
+  }
+}
+.header .burger > span {
+  display: inline-block;
+  position: relative;
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.header .burger > span:after, .header .burger > span:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.header .burger > span:before {
+  top: auto;
+  bottom: 8px;
+}
+.header .burger > span.open {
+  background: transparent;
+}
+.header .burger > span.open:after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+.header .burger > span.open:before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  bottom: 0;
+}
+.header .burger > ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+.header .burger > ul li {
+  white-space: nowrap;
+}
+.header .burger > ul li a {
+  padding: 15px 20px;
+  width: 100%;
+  min-width: 150px;
+  color: black;
+  text-align: left;
+  background-color: transparent;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.header .burger > ul li a:hover {
+  background-color: #fff;
 }

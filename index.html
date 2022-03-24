@@ -2,7 +2,7 @@
 <html lang="zh-Hant-TW">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
@@ -15,14 +15,18 @@
     <script src="script/jquery/jquery-3.6.0.js"></script>
     <script>
       $(document).ready(function() {
-      $(window).scroll(function() {
-      var ww = $(window).scrollTop();
-      if (ww > 100) {
-      $('.header').addClass('fix');
-      } else {
-      $('.header').removeClass('fix');
-      }
-      });
+      	$(window).scroll(function() {
+      		var ww = $(window).scrollTop();
+      		if (ww > 100) {
+      			$('.header').addClass('fix');
+      		} else {
+      			$('.header').removeClass('fix');
+      		}
+      	});
+      	$('.burger').on('click', function () {
+      		$(this).find('span').toggleClass('open');
+      		$(this).find('ul').slideToggle();
+      	}); 
       });
     </script>
     <link rel="stylesheet" href="styles/reset.css">
@@ -43,6 +47,14 @@
           <li><a class="t-C inline-block relative" href="#works">作品<span class="inline-block absolute">Works</span></a></li>
           <li><a class="t-C inline-block relative" href="#contact">聯絡我們<span class="inline-block absolute">Contact</span></a></li>
         </ul>
+        <div class="burger"><span></span>
+          <ul>
+            <li><a class="t-C inline-block relative" href="#index">首頁</a></li>
+            <li><a class="t-C inline-block relative" href="#service">服務</a></li>
+            <li><a class="t-C inline-block relative" href="#works">作品</a></li>
+            <li><a class="t-C inline-block relative" href="#contact">聯絡我們</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="banner p-T-20">

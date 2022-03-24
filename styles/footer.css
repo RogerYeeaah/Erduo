@@ -115,6 +115,11 @@
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+@media only screen and (max-width: 800px) {
+  .footer:after {
+    width: 100vw;
+  }
+}
 .footer:before {
   content: "";
   position: absolute;
@@ -171,6 +176,11 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+@media only screen and (max-width: 800px) {
+  .footer .logo {
+    width: 38%;
+  }
+}
 .footer .contact .title {
   font-weight: bold;
   font-size: 17px;
@@ -178,10 +188,20 @@
   line-height: 21px;
   color: rgba(198, 154, 108, 0.8);
 }
+@media only screen and (max-width: 800px) {
+  .footer .contact .title {
+    font-size: 13.6px;
+  }
+}
 .footer .contact li {
   font-weight: 500;
   font-size: 17px;
   letter-spacing: 1.16px;
   line-height: 21px;
   color: rgba(0, 0, 0, 0.3);
+}
+@media only screen and (max-width: 800px) {
+  .footer .contact li {
+    font-size: 13.6px;
+  }
 }

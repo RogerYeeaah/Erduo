@@ -2,7 +2,7 @@ doctype html
 html(lang='zh-Hant-TW')
 	head
 		meta(charset='UTF-8')
-		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
 		meta(http-equiv='X-UA-Compatible' content='ie=edge')
 		meta(content='yes' name='apple-mobile-web-app-capable')
 		meta(content='black' name='apple-mobile-web-app-status-bar-style')
@@ -16,14 +16,18 @@ html(lang='zh-Hant-TW')
 		script(src='script/jquery/jquery-3.6.0.js')
 		script.
 			$(document).ready(function() {
-			$(window).scroll(function() {
-			var ww = $(window).scrollTop();
-			if (ww > 100) {
-			$('.header').addClass('fix');
-			} else {
-			$('.header').removeClass('fix');
-			}
-			});
+				$(window).scroll(function() {
+					var ww = $(window).scrollTop();
+					if (ww > 100) {
+						$('.header').addClass('fix');
+					} else {
+						$('.header').removeClass('fix');
+					}
+				});
+				$('.burger').on('click', function () {
+					$(this).find('span').toggleClass('open');
+					$(this).find('ul').slideToggle();
+				}); 
 			});
 		link(rel='stylesheet' href='styles/reset.css')
 		link(rel='stylesheet' href='styles/custom.css')
@@ -52,6 +56,22 @@ html(lang='zh-Hant-TW')
 						a.t-C.inline-block.relative(href='#contact')
 							| 聯絡我們
 							span.inline-block.absolute Contact
+				.burger
+					span
+					ul
+						li
+							a.t-C.inline-block.relative(href='#index')
+								| 首頁
+						li
+							a.t-C.inline-block.relative(href='#service')
+								| 服務
+						li
+							a.t-C.inline-block.relative(href='#works')
+								| 作品
+						li
+							a.t-C.inline-block.relative(href='#contact')
+								| 聯絡我們
+
 		.banner.p-T-20
 			.container.full-40
 				.banner-img.relative(style="background-image: url('images/banner-01.jpg')")
