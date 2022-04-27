@@ -492,8 +492,8 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1280px;
   max-width: 100%;
+  width: 1280px;
 }
 @media only screen and (max-width: 1439px) {
   .container {
@@ -501,12 +501,12 @@ body {
   }
 }
 .container.full-40 {
-  width: calc(100% - 40px);
   max-width: 100%;
+  width: calc(100% - 40px);
 }
 .container.full-160 {
-  width: calc(100% - 160px);
   max-width: 100%;
+  width: calc(100% - 160px);
 }
 @media only screen and (max-width: 800px) {
   .container.full-160 {
@@ -515,18 +515,18 @@ body {
 }
 
 [class*=btn] {
-  padding: 18px 25px 18px 30px;
   position: absolute;
+  right: 20px;
+  bottom: 0;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  right: 20px;
-  bottom: 0;
+  padding: 18px 25px 18px 30px;
   background: white;
-  z-index: 3;
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 1px;
@@ -539,13 +539,13 @@ body {
   }
 }
 [class*=btn] .img {
-  margin-right: 5px;
   display: inline-block;
+  margin-right: 5px;
   width: 32px;
   height: 32px;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 [class*=btn] span {
   display: inline-block;
@@ -555,12 +555,12 @@ body {
   position: relative;
 }
 .banner .banner-img {
-  width: 100%;
-  padding-bottom: 50.8%;
   position: relative;
+  padding-bottom: 50.8%;
+  width: 100%;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
 }
 @media only screen and (max-width: 800px) {
   .banner .banner-img {
@@ -568,30 +568,30 @@ body {
   }
 }
 .banner .banner-img:after {
-  content: "";
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
+  z-index: 1;
   width: 70%;
+  height: 100%;
   background-image: url(../images/wave-01.png);
+  background-position: right bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: right bottom;
-  z-index: 1;
+  content: "";
 }
 .banner .banner-img:before {
-  content: "";
   position: absolute;
   bottom: -40px;
   left: calc((100vw - 1280px - 80px) * 0.5);
-  height: 100%;
+  z-index: 2;
   width: 60%;
+  height: 100%;
   background-image: url(../images/banner-text-01.png);
+  background-position: left bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: left bottom;
-  z-index: 2;
+  content: "";
 }
 @media only screen and (max-width: 1439px) {
   .banner .banner-img:before {
@@ -600,8 +600,8 @@ body {
 }
 @media only screen and (max-width: 800px) {
   .banner .banner-img:before {
-    width: 100%;
     bottom: 10px;
+    width: 100%;
   }
 }
 .banner .btn-scroll-down {
@@ -609,38 +609,38 @@ body {
 }
 
 .service {
-  margin-top: -40px;
   position: relative;
   z-index: 2;
+  margin-top: -40px;
 }
 .service .decoration-layer {
   margin-left: 80px;
-  width: calc(100% - 80px);
   margin-left: 40px;
+  width: calc(100% - 80px);
   width: calc(100% - 40px);
 }
 .service .decoration-layer:after {
-  content: "";
   position: absolute;
   bottom: -250px;
   left: calc(50% - 33px);
+  z-index: -1;
   width: 100vw;
   height: 713px;
   background-image: url(../images/wave-02.png);
-  background-repeat: no-repeat;
-  background-size: contain;
   background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  z-index: -1;
   pointer-events: none;
 }
 .service .service-card {
-  margin-left: 95px;
   position: relative;
-  background: white;
+  margin-left: 95px;
   border-radius: 0 0 0 30px;
+  background: white;
   -webkit-box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.05);
 }
@@ -650,13 +650,13 @@ body {
   }
 }
 .service .service-card:after {
-  content: "";
   position: absolute;
-  height: calc(100% - 100px);
   bottom: 0;
   left: -100px;
   width: 1px;
+  height: calc(100% - 100px);
   background: rgba(0, 0, 0, 0.2);
+  content: "";
 }
 @media only screen and (max-width: 1439px) {
   .service .service-card:after {
@@ -664,8 +664,8 @@ body {
   }
 }
 .service .title-box {
-  padding: 25px 40px;
   display: inline-block;
+  padding: 25px 40px;
   background: #c69a6c;
 }
 @media only screen and (max-width: 800px) {
@@ -705,19 +705,19 @@ body {
   }
 }
 .service .title-box span small:before {
-  content: "╱";
-  padding: 0 10px;
   position: relative;
   bottom: 2px;
+  padding: 0 10px;
+  content: "╱";
   font-size: 20px;
 }
 .service .content-box {
-  padding: 40px 50px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 40px 50px;
 }
 @media only screen and (max-width: 800px) {
   .service .content-box {
@@ -725,23 +725,20 @@ body {
   }
 }
 .service .content-box .card {
-  margin-right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-right: 50px;
   width: calc(33.333% - 33.3333333333px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-.service .content-box .card:nth-child(3n) {
-  margin-right: 0;
 }
 @media only screen and (max-width: 800px) {
   .service .content-box .card {
@@ -752,15 +749,24 @@ body {
     margin-right: 0 !important;
   }
 }
+@media only screen and (max-width: 580px) {
+  .service .content-box .card {
+    margin-right: 0px !important;
+    width: 100%;
+  }
+}
+.service .content-box .card:nth-child(3n) {
+  margin-right: 0;
+}
 .service .content-box .card div {
   width: 100%;
 }
 .service .content-box .card .img {
   width: 90px;
   height: 90px;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 @media only screen and (max-width: 800px) {
   .service .content-box .card .img {
@@ -805,26 +811,26 @@ body {
 }
 
 .feature .feature-card {
-  padding: 60px 0;
   position: relative;
+  padding: 60px 0;
 }
 .feature .feature-card:after {
-  content: "";
   position: absolute;
-  left: -80px;
   top: 0;
+  left: -80px;
+  z-index: -1;
   width: calc(50% + 50vw - 50px);
   height: 100%;
+  border-radius: 0px 0px 30px 0px;
   background-image: url(../images/feature-01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 0px 0px 30px 0px;
-  z-index: -1;
+  content: "";
 }
 @media only screen and (max-width: 800px) {
   .feature .feature-card:after {
-    width: calc(65% + 65vw - 50px);
     left: -80px;
+    width: calc(65% + 65vw - 50px);
   }
 }
 .feature .feature-card .title {
@@ -855,34 +861,34 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .feature .feature-card ul li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-right: 40px;
   padding: 70px 24px;
   width: calc(25% - 30px);
-  background: rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.feature .feature-card ul li:last-child {
-  margin-right: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 @media only screen and (max-width: 800px) {
   .feature .feature-card ul li {
-    padding: 30px 15px;
     margin: 0;
     margin-bottom: 10px;
+    padding: 30px 15px;
     width: 100%;
   }
+}
+.feature .feature-card ul li:last-child {
+  margin-right: 0;
 }
 .feature .feature-card ul li .content {
   font-weight: bold;
@@ -916,32 +922,32 @@ body {
   position: relative;
 }
 .works .works-card:after {
-  content: "";
   position: absolute;
-  right: -80px;
   top: 0;
+  right: -80px;
+  z-index: -1;
   width: calc(50% + 50vw - 90px);
   height: 100%;
   border-radius: 0px 0px 0px 30px;
-  background: white;
-  z-index: -1;
+  background: #e4ded6;
+  content: "";
 }
 @media only screen and (max-width: 800px) {
   .works .works-card:after {
-    width: calc(65% + 65vw - 90px);
     right: -40px;
+    width: calc(65% + 65vw - 90px);
   }
 }
 .works .title-box {
-  padding: 25px 0px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  padding: 25px 0px;
   width: 100%;
 }
 .works .title-box span {
@@ -971,26 +977,32 @@ body {
   }
 }
 .works .title-box span small:before {
-  content: "╱";
-  padding: 0 10px;
   position: relative;
   bottom: 2px;
+  padding: 0 10px;
+  content: "╱";
   font-size: 20px;
 }
 .works .title-box .function-box {
   position: relative;
-  right: 0px;
   top: 0px;
+  right: 0px;
+}
+@media only screen and (max-width: 580px) {
+  .works .title-box .function-box {
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 .works .title-box .function-box .filter {
-  margin-right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 0;
+  height: 100%;
 }
 @media only screen and (max-width: 800px) {
   .works .title-box .function-box .filter {
@@ -1004,9 +1016,6 @@ body {
 .works .title-box .function-box .filter li {
   margin-right: 30px;
 }
-.works .title-box .function-box .filter li:last-child {
-  margin: 0;
-}
 @media only screen and (max-width: 800px) {
   .works .title-box .function-box .filter li {
     margin: 0;
@@ -1014,22 +1023,25 @@ body {
     width: 33.33%;
   }
 }
+.works .title-box .function-box .filter li:last-child {
+  margin: 0;
+}
 .works .title-box .function-box .filter li a {
-  padding-left: 0px;
   position: relative;
+  padding-left: 0px;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
   color: rgba(0, 0, 0, 0.55);
 }
 .works .title-box .function-box .filter li a:before {
-  content: "";
   position: absolute;
   top: 50%;
   left: 0;
   width: 0px;
   height: 1px;
   background: rgba(0, 0, 0, 0.55);
+  content: "";
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -1051,8 +1063,8 @@ body {
   width: 100%;
 }
 .works .card-box .work-card {
-  margin-bottom: 40px;
   margin-right: 35px;
+  margin-bottom: 40px;
   width: calc(33.333% - 23.3333333333px);
 }
 @media only screen and (max-width: 800px) {
@@ -1064,6 +1076,12 @@ body {
     margin-right: 0px !important;
   }
 }
+@media only screen and (max-width: 580px) {
+  .works .card-box .work-card {
+    margin-right: 0px !important;
+    width: 100%;
+  }
+}
 .works .card-box .work-card:nth-child(3n) {
   margin-right: 0;
 }
@@ -1071,28 +1089,28 @@ body {
   position: relative;
 }
 .works .card-box .work-card .img-box .img {
-  width: 100%;
   padding-bottom: 83%;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 .works .card-box .work-card .img-box a {
-  padding: 15px 60px;
   position: absolute;
   right: 0;
   bottom: -5px;
-  color: white;
+  padding: 15px 60px;
   background: rgba(0, 0, 0, 0.7);
-}
-.works .card-box .work-card .img-box a:hover {
-  background: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 @media only screen and (max-width: 800px) {
   .works .card-box .work-card .img-box a {
     padding: 15px 40px;
   }
+}
+.works .card-box .work-card .img-box a:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
 .works .card-box .work-card .title {
   padding: 20px 0;
