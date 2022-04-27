@@ -1087,13 +1087,14 @@ body {
 }
 .works .card-box .work-card .img-box {
   position: relative;
+  background: white;
 }
 .works .card-box .work-card .img-box .img {
   padding-bottom: 83%;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.05);
   background-position: center;
-  background-size: cover;
+  background-size: 90%;
   background-repeat: no-repeat;
 }
 .works .card-box .work-card .img-box a {
