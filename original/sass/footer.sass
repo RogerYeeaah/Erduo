@@ -1,0 +1,101 @@
+@charset "utf-8"
+
+@import mixins/_rwd
+@import mixins/_font
+
+.footer
+	position: relative
+	top: 40px
+	z-index: 999
+	margin-bottom: 70px
+	width: 100%
+	transition: .5s ease
+
+	&:after
+		position: absolute
+		top: 100%
+		left: 50%
+		z-index: -2
+		width: 100vw
+		height: 70px
+		background: #c2ab93
+		content: ''
+		transform: translateX(-50%)
+
+		+breakpoint(pad-portrait)
+			width: 100vw
+
+	&:before
+		position: absolute
+		top: 0
+		right: calc((100vw - 100% - 40px) * -0.5 + 60px)
+		z-index: -1
+		width: 100vw
+		height: 100%
+		border-radius: 0 30px 0 0
+		background: rgba(white, 0.6)
+		content: ''
+
+	.container
+		position: relative
+		padding: 65px 0px
+
+		+breakpoint(zone-nb)
+			max-width: calc(100% - 80px)
+
+		&:after
+			position: absolute
+			bottom: 0
+			left: calc(1280px/2 + ((100vw - 1280px)/2))
+			z-index: -2
+			width: 60%
+			height: 100%
+			background-image: url(../images/wave-03.png)
+			background-position: bottom right
+			background-size: contain
+			background-repeat: no-repeat
+			content: ''
+
+		&:before
+			position: absolute
+			right: -100px
+			bottom: -45px
+			z-index: 1
+			z-index: -1
+			width: 60vw
+			height: calc(60vw * 0.313)
+			background-image: url(../images/footer-text-01.png)
+			background-position: center
+			background-size: cover
+			background-repeat: no-repeat
+			content: ''
+
+			+breakpoint(mobile-landscape)
+				right: 0px
+				width: 32vw
+				height: 8.78vw
+
+	.logo
+		margin-bottom: 215px
+		width: 11.09%
+
+		+breakpoint(pad-portrait)
+			width: 38%
+
+		.img
+			padding-bottom: 35.2%
+			width: 100%
+			background-position: center
+			background-size: cover
+			background-repeat: no-repeat
+
+	.contact
+		.title
+			+caption2
+			+accent-color
+
+		li
+			+caption
+			+disabled-color
+			
+			
