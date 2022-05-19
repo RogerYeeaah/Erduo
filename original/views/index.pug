@@ -11,9 +11,8 @@ html(lang='zh-Hant-TW')
 		meta(name='author' content='')
 		meta(name='copyright' content='')
 		meta(name='robots' content='none')
-		script.
-			// 共用參數
 		script(src='script/jquery/jquery-3.6.0.js')
+		script(src='script/script.js')
 		script.
 			$(document).ready(function() {
 				$(window).scroll(function() {
@@ -146,42 +145,42 @@ html(lang='zh-Hant-TW')
 								li.option
 									a.active(href='javascript:;' data-filter='all') 全部
 								li.option
-									a(href='javascript:;' data-filter='01') 網頁
+									a(href='javascript:;' data-filter='1') 網頁
 								li.option
-									a(href='javascript:;' data-filter='02') 系統
+									a(href='javascript:;' data-filter='2') 系統
 								li.option
-									a(href='javascript:;' data-filter='03') LOGO
+									a(href='javascript:;' data-filter='3') LOGO
 								li.option
-									a(href='javascript:;' data-filter='04') UI/X
+									a(href='javascript:;' data-filter='4') UI/X
 								li.option
-									a(href='javascript:;' data-filter='05') CI設計
+									a(href='javascript:;' data-filter='5') CI設計
 					ul.card-box
-						.work-card
+						.work-card(data-cate="all 3")
 							.img-box
 								.img(style='background-image: url(./images/works-01.jpg)')
 								a.color-box(href='javascript:;') Detail
 							.title 介紹標題介紹標題
-						.work-card
+						.work-card(data-cate="all 3")
 							.img-box
 								.img(style='background-image: url(./images/works-02.jpg)')
 								a.color-box(href='javascript:;') Detail
 							.title 介紹標題介紹標題
-						.work-card
+						.work-card(data-cate="all 3")
 							.img-box
 								.img(style='background-image: url(./images/works-03.jpg)')
 								a.color-box(href='javascript:;') Detail
 							.title 介紹標題介紹標題
-						.work-card
+						.work-card(data-cate="all 1")
 							.img-box
 								.img(style='background-image: url(./images/works-04.jpg)')
 								a.color-box(href='javascript:;') Detail
 							.title 介紹標題介紹標題
-						.work-card
+						.work-card(data-cate="all 1")
 							.img-box
 								.img(style='background-image: url(./images/works-05.jpg)')
 								a.color-box(href='javascript:;') Detail
 							.title 介紹標題介紹標題
-						.work-card
+						.work-card(data-cate="all 1")
 							.img-box
 								.img(style='background-image: url(./images/works-06.jpg)')
 								a.color-box(href='javascript:;') Detail
