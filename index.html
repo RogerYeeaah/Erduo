@@ -2,7 +2,7 @@
 <html lang="zh-Hant-TW">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="black" name="apple-mobile-web-app-status-bar-style">
@@ -11,24 +11,9 @@
     <meta name="author" content="">
     <meta name="copyright" content="">
     <meta name="robots" content="none">
+    <script>// 共用參數</script>
     <script src="script/jquery/jquery-3.6.0.js"></script>
     <script src="script/script.js"></script>
-    <script>
-      $(document).ready(function() {
-      	$(window).scroll(function() {
-      		var ww = $(window).scrollTop();
-      		if (ww > 100) {
-      			$('.header').addClass('fix');
-      		} else {
-      			$('.header').removeClass('fix');
-      		}
-      	});
-      	$('.burger').on('click', function () {
-      		$(this).find('span').toggleClass('open');
-      		$(this).find('ul').slideToggle();
-      	}); 
-      });
-    </script>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/custom.css">
     <link rel="stylesheet" href="styles/header.css">
@@ -47,22 +32,12 @@
           <li><a class="t-C inline-block relative" href="#works">作品<span class="inline-block absolute">Works</span></a></li>
           <li><a class="t-C inline-block relative" href="#contact">聯絡我們<span class="inline-block absolute">Contact</span></a></li>
         </ul>
-        <div class="burger"><span></span>
-          <ul>
-            <li><a class="t-C inline-block relative" href="#index">首頁</a></li>
-            <li><a class="t-C inline-block relative" href="#service">服務</a></li>
-            <li><a class="t-C inline-block relative" href="#works">作品</a></li>
-            <li><a class="t-C inline-block relative" href="#contact">聯絡我們</a></li>
-          </ul>
-        </div>
       </div>
     </div>
     <div class="banner p-T-20">
       <div class="container full-40">
         <div class="banner-img relative" style="background-image: url('images/banner-01.jpg')"></div><a class="btn-scroll-down" href="#content">
-          <div class="img" style="background-image: url('images/icons/icon-mouse.png')"></div><span>
-            Scroll
-            down</span></a>
+          <div class="img" style="background-image: url('images/icons/icon-mouse.png')"></div><span>Scroll down</span></a>
       </div>
     </div>
     <div class="service m-B-100">
@@ -138,51 +113,51 @@
           <div class="title-box"><span>作品<small>Works</small></span>
             <div class="function-box">
               <ul class="filter">
-                <li class="option"><a class="active" href="javascript:;" data-filter="all">全部</a></li>
-                <li class="option"><a href="javascript:;" data-filter="1">網頁</a></li>
-                <li class="option"><a href="javascript:;" data-filter="2">系統</a></li>
-                <li class="option"><a href="javascript:;" data-filter="3">LOGO</a></li>
-                <li class="option"><a href="javascript:;" data-filter="4">UI/X</a></li>
-                <li class="option"><a href="javascript:;" data-filter="5">CI設計</a></li>
+                <li class="option active" data-filter="all"><a href="javascript:;">全部</a></li>
+                <li class="option" data-filter="Web"><a href="javascript:;">網頁</a></li>
+                <li class="option" data-filter="Sys"><a href="javascript:;">系統</a></li>
+                <li class="option" data-filter="Logo"><a href="javascript:;">LOGO</a></li>
+                <li class="option" data-filter="Uix"><a href="javascript:;">UI/X</a></li>
+                <li class="option" data-filter="Ci"><a href="javascript:;">CI設計</a></li>
               </ul>
             </div>
           </div>
           <ul class="card-box">
-            <div class="work-card" data-cate="all 3">
+            <div class="work-card" data-cate="all Logo">
               <div class="img-box">
                 <div class="img" style="background-image: url(./images/works-01.jpg)"></div><a class="color-box" href="javascript:;">Detail</a>
               </div>
-              <div class="title">介紹標題介紹標題</div>
+              <div class="title">社子島查估系統</div>
             </div>
-            <div class="work-card" data-cate="all 3">
+            <div class="work-card" data-cate="all Logo">
               <div class="img-box">
                 <div class="img" style="background-image: url(./images/works-02.jpg)"></div><a class="color-box" href="javascript:;">Detail</a>
               </div>
-              <div class="title">介紹標題介紹標題</div>
+              <div class="title">幼教聯盟</div>
             </div>
-            <div class="work-card" data-cate="all 3">
+            <div class="work-card" data-cate="all Logo">
               <div class="img-box">
                 <div class="img" style="background-image: url(./images/works-03.jpg)"></div><a class="color-box" href="javascript:;">Detail</a>
               </div>
-              <div class="title">介紹標題介紹標題</div>
+              <div class="title">Crc兒童權利公約</div>
             </div>
-            <div class="work-card" data-cate="all 1">
+            <div class="work-card" data-cate="all Sys">
               <div class="img-box">
                 <div class="img" style="background-image: url(./images/works-04.jpg)"></div><a class="color-box" href="javascript:;">Detail</a>
               </div>
-              <div class="title">介紹標題介紹標題</div>
+              <div class="title">司法改革進度資訊平台</div>
             </div>
-            <div class="work-card" data-cate="all 1">
+            <div class="work-card" data-cate="all Web">
               <div class="img-box">
                 <div class="img" style="background-image: url(./images/works-05.jpg)"></div><a class="color-box" href="javascript:;">Detail</a>
               </div>
-              <div class="title">介紹標題介紹標題</div>
+              <div class="title">2020北美獎徵件平台</div>
             </div>
-            <div class="work-card" data-cate="all 1">
+            <div class="work-card" data-cate="all Web Sys">
               <div class="img-box">
                 <div class="img" style="background-image: url(./images/works-06.jpg)"></div><a class="color-box" href="javascript:;">Detail</a>
               </div>
-              <div class="title">介紹標題介紹標題</div>
+              <div class="title">erduo 爾多官方網站</div>
             </div>
           </ul>
         </div>

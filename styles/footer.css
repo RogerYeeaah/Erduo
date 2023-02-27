@@ -108,7 +108,7 @@
   position: absolute;
   top: 100%;
   left: 50%;
-  width: calc(100vw - 15px);
+  width: 100%;
   height: 70px;
   background: #c2ab93;
   -webkit-transform: translateX(-50%);
@@ -145,7 +145,7 @@
   position: absolute;
   height: 100%;
   width: 60%;
-  right: -40px;
+  right: -80px;
   bottom: 0;
   background-image: url(../images/wave-03.png);
   background-repeat: no-repeat;
