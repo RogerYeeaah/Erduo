@@ -1057,19 +1057,20 @@ body {
   background-position: center;
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
-.works .card-box .work-card .img-box a {
+.works .card-box .work-card .img-box .color-box {
   padding: 15px 60px;
   position: absolute;
   right: 0;
   bottom: -5px;
   color: white;
   background: rgba(0, 0, 0, 0.7);
+  pointer-events: none;
 }
-.works .card-box .work-card .img-box a:hover {
+.works .card-box .work-card .img-box .color-box:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 @media only screen and (max-width: 800px) {
-  .works .card-box .work-card .img-box a {
+  .works .card-box .work-card .img-box .color-box {
     padding: 15px 40px;
   }
 }
