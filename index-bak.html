@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-  <head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta content="yes" name="apple-mobile-web-app-capable">
-<meta content="black" name="apple-mobile-web-app-status-bar-style">
-<meta content="telephone=no" name="format-detection">
-<meta name="title" content="">
-<meta name="author" content="">
-<meta name="copyright" content="">
-<meta name="robots" content="none"><link rel="stylesheet" href="styles/reset.css">
-<link rel="stylesheet" href="styles/custom.css">
-<link rel="stylesheet" href="styles/header.css">
-<link rel="stylesheet" href="styles/footer.css"><script src="script/jquery/jquery-3.6.0.js"></script>
-<script src="script/script.js"></script>
-<script src="script/plugins/viewer.js"></script>
-<script src="node_modules/zooming/build/zooming.min.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="title" content="">
+    <meta name="author" content="">
+    <meta name="copyright" content="">
+    <meta name="robots" content="none">
+    <script>// 共用參數</script>
+    <script src="script/jquery/jquery-3.6.0.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/plugins/viewer.js"></script>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/custom.css">
     <link rel="stylesheet" href="styles/header.css">
@@ -29,14 +28,10 @@
           <div class="img" style="background-image: url('images/logo-white.svg')"></div>
         </div>
         <ul class="menu flex f-R">
-          <li><a class="t-C inline-block relative" href="#index">
-              首頁<span class="inline-block absolute">Home</span></a></li></a></li>
-          <li><a class="t-C inline-block relative" href="#service">
-              服務<span class="inline-block absolute">Service</span></a></a></li>
-          <li><a class="t-C inline-block relative" href="#works">
-              作品<span class="inline-block absolute">Works</span></a></li></a></li>
-          <li><a class="t-C inline-block relative" href="#contact">
-              聯絡我們<span class="inline-block absolute">Contact</span></a></li>
+          <li><a class="t-C inline-block relative" href="#index">首頁<span class="inline-block absolute">Home</span></a></li>
+          <li><a class="t-C inline-block relative" href="#service">服務<span class="inline-block absolute">Service</span></a></li>
+          <li><a class="t-C inline-block relative" href="#works">作品<span class="inline-block absolute">Works</span></a></li>
+          <li><a class="t-C inline-block relative" href="#contact">聯絡我們<span class="inline-block absolute">Contact</span></a></li>
         </ul>
       </div>
     </div>
@@ -46,7 +41,7 @@
           <div class="img" style="background-image: url('images/icons/icon-mouse.png')"></div><span>Scroll down</span></a>
       </div>
     </div>
-    <div class="service m-B-100" id="service">
+    <div class="service m-B-100">
       <div class="container full-40">
         <div class="decoration-layer">
           <div class="service-card">
@@ -87,12 +82,11 @@
         </div>
       </div>
     </div>
-    <div class="feature" id="feature">
+    <div class="feature">
       <div class="container full-160">
         <div class="feature-card">
           <div class="title t-C m-B-20">SINCE 2018</div>
-          <div class="intro t-C m-B-40">
-            團隊從團隊從2018成立，陸續服務許多客戶專業的服務深受肯定</div>
+          <div class="intro t-C m-B-40">團隊從團隊從2018成立，陸續服務許多客戶<br>專業的服務深受肯定</div>
           <ul class="t-C">
             <li class="card">
               <div class="content m-B-20">50+</div>
@@ -114,7 +108,7 @@
         </div>
       </div>
     </div>
-    <div class="works" id="works">
+    <div class="works">
       <div class="container full-160">
         <div class="works-card">
           <div class="title-box"><span>作品<small>Works</small></span>
@@ -130,30 +124,40 @@
             </div>
           </div>
           <ul class="card-box">
-            <div class="work-card" data-cate="all Logo"><a class="img-box" href="javascript:;"><img src="./images/works-01.jpg" data-original="images/works-01.jpg">
-                <div class="color-box">Detail</div></a>
+            <div class="work-card" data-cate="all Logo">
+              <div class="img-box">
+                <div class="img" style="background-image: url(./images/works-01.jpg)"></div><a class="color-box" href="javascript:;">Detail</a>
+              </div>
               <div class="title">社子島查估系統</div>
             </div>
             <div class="work-card" data-cate="all Logo">
-              <div class="img-box"><img src="./images/works-02.jpg" data-original="images/works-02.jpg">
-                <div class="color-box">Detail</div>
+              <div class="img-box">
+                <div class="img" style="background-image: url(./images/works-02.jpg)"></div><a class="color-box" href="javascript:;">Detail</a>
               </div>
               <div class="title">幼教聯盟</div>
             </div>
-            <div class="work-card" data-cate="all Logo"><a class="img-box" href="javascript:;"><img src="images/works-03.jpg" data-original="images/works-03.jpg">
-                <div class="color-box">Detail</div></a>
+            <div class="work-card" data-cate="all Logo">
+              <div class="img-box">
+                <div class="img" style="background-image: url(./images/works-03.jpg)"></div><a class="color-box" href="javascript:;">Detail</a>
+              </div>
               <div class="title">Crc兒童權利公約</div>
             </div>
-            <div class="work-card" data-cate="all Sys"><a class="img-box" href="javascript:;"><img src="images/works-04.jpg" data-original="images/works-04.jpg">
-                <div class="color-box">Detail</div></a>
+            <div class="work-card" data-cate="all Sys">
+              <div class="img-box">
+                <div class="img" style="background-image: url(./images/works-04.jpg)"></div><a class="color-box" href="javascript:;">Detail</a>
+              </div>
               <div class="title">司法改革進度資訊平台</div>
             </div>
-            <div class="work-card" data-cate="all Web"><a class="img-box" href="javascript:;"><img src="images/works-05.jpg" data-original="images/works-05.jpg">
-                <div class="color-box">Detail</div></a>
+            <div class="work-card" data-cate="all Web">
+              <div class="img-box">
+                <div class="img" style="background-image: url(./images/works-05.jpg)"></div><a class="color-box" href="javascript:;">Detail</a>
+              </div>
               <div class="title">2020北美獎徵件平台</div>
             </div>
-            <div class="work-card" data-cate="all Sys"><a class="img-box" href="javascript:;"><img src="images/works-06.jpg" data-original="images/works-06.jpg">
-                <div class="color-box">Detail</div></a>
+            <div class="work-card" data-cate="all Web Sys">
+              <div class="img-box">
+                <div class="img" style="background-image: url(./images/works-06.jpg)"></div><a class="color-box" href="javascript:;">Detail</a>
+              </div>
               <div class="title">erduo 爾多官方網站</div>
             </div>
           </ul>
@@ -169,11 +173,10 @@
           <div class="title m-B-30">Contact Us</div>
           <ul class="info-box">
             <li class="m-B-10">Tel:<span>+886 988519746</span></li>
-            <li>E-mail: <span>wayne19921106@gmail.com</span></li>
+            <li>E-mail:<span>wayne19921106@gmail.com</span></li>
           </ul>
         </div>
       </div>
-      <div class="dec"></div>
     </div>
   </body>
 </html>

@@ -42,31 +42,6 @@
 		+breakpoint(zone-nb)
 			max-width: calc(100% - 80px)
 
-		&:after
-			content: ''
-			position: absolute
-			height: 100%
-			width: 60%
-			right: -80px
-			bottom: 0
-			background-image: url(../images/wave-03.png)
-			background-repeat: no-repeat
-			background-size: contain
-			background-position: bottom right
-
-		&:before
-			content: ''
-			position: absolute
-			height: calc(60vw * 0.313)
-			width: 60vw
-			right: 0
-			bottom: -45px
-			background-image: url(../images/footer-text-01.png)
-			background-repeat: no-repeat
-			background-size: cover
-			background-position: center
-			z-index: 0
-
 	.logo
 		margin-bottom: 215px
 		width: 11.09%
@@ -92,4 +67,28 @@
 			+caption
 			+disabled-color
 			
-			
+	.dec
+		&:after
+			content: ''
+			position: absolute
+			height: 100%
+			width: 53%
+			bottom: 0
+			right: 0
+			background-image: url(../images/wave-03.png)
+			background-repeat: no-repeat
+			background-size: contain
+			background-position: bottom right
+
+		&:before
+			content: ''
+			position: absolute
+			height: calc(60vw * 0.313)
+			width: 60vw
+			right: 0
+			bottom: -35px
+			background-image: url(../images/footer-text-01.png)
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center
+			z-index: 0

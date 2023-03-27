@@ -551,7 +551,7 @@ body {
 }
 .banner .banner-img {
   width: 100%;
-  padding-bottom: 50.8%;
+  padding-bottom: calc(100vh - 40px);
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
