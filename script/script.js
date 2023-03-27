@@ -22,4 +22,10 @@ $(document).ready(function () {
 			}
 		})
 	})
+
+	
+	new Zooming({
+		bgColor: 'rgba(0, 0, 0, 0.85)',
+	}).listen('img')
+
 });

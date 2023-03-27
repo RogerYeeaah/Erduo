@@ -1050,9 +1050,8 @@ body {
 .works .card-box .work-card .img-box {
   position: relative;
 }
-.works .card-box .work-card .img-box .img {
-  width: 100%;
-  padding-bottom: 83%;
+.works .card-box .work-card .img-box img {
+  max-width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
